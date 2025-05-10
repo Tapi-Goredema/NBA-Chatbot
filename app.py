@@ -70,5 +70,5 @@ def chat():
     return jsonify(response="Try “heaviest”, “college”, or “player info <first> <last>.”")
 
 
-if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 8080)))
